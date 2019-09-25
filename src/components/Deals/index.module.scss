@@ -1,0 +1,100 @@
+@import '../../sass/vars';
+
+.deals{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    .content{
+        display: flex;
+
+        & > *{
+            flex: 1;
+            box-shadow: 0 0 10px rgba(0,0,0,.1);
+        }
+
+        .familyPack{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1rem;
+            cursor: pointer;
+
+            .familyLogo{
+                height: 6rem;
+            }
+            
+            .heading{
+                color: $color-red;
+                font-weight: 300;
+                font-size: 2.4rem;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .newPhone{
+            height: 30rem;
+            background-image: url(../../assets/img/banner-iphone11.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            cursor: pointer;
+
+            .order{
+                position: absolute;
+                bottom: 4rem;
+                right: 1rem;
+            }
+        }
+
+        button{
+            background-color: $color-red;
+            color: $color-white;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            padding: 1rem 6rem;
+            font-size: 1.6rem;
+            font-weight: 300;
+            transition: $transition;
+            cursor: pointer;
+
+            &::first-letter{
+                text-transform: capitalize;
+            }
+
+            &:hover{
+                background-color: $color-red-dark;
+            }
+        }
+    }
+
+    .more{
+        color: $color-red;
+        border: 2px solid $color-red;
+        outline: none;
+        border-radius: 30px;
+        padding: 1rem 6rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-top: 4rem;
+        transition: $transition;
+        cursor: pointer;
+
+        &::first-letter{
+            text-transform: capitalize;
+        }
+
+        &:hover{
+            background-color: $color-red;
+            color: $color-white;
+        }
+
+        // TO DELETE JUST FOR SCROLLING PURPOSE
+        margin-bottom: 10rem;
+    }
+}

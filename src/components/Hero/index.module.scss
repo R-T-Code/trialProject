@@ -1,0 +1,45 @@
+@import '../../sass/vars';
+
+.hero{
+    background-image: url(../../assets/img/lp_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 560px;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 70px),0 100%);
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content{
+        position: relative;
+        text-align: center;
+
+        .bubble{
+            position: absolute;
+            top: -110px;
+            right: -120px;
+        }
+
+        .more{
+            border: none;
+            outline: none;
+            background-color: $color-red;
+            font-size: 1.6rem;
+            color: inherit;
+            padding: 1.5rem 3rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: $transition;
+
+            &::first-letter{
+                text-transform: uppercase;
+            }
+
+            &:hover{
+                background-color: $color-red-dark;
+            }
+        }
+    }
+}

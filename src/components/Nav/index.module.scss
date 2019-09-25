@@ -1,0 +1,63 @@
+@import '../../sass/vars';
+
+.nav{
+    background-color: $color-red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $color-white;
+    padding: 0 2rem;
+    text-transform: uppercase;
+
+    .logoWrapper{
+        height: 100%;
+        width: 10rem;
+        cursor: pointer;
+        .mainLogo{
+            display: block;
+        }
+    }
+
+    .navigation{
+        display: flex;
+        height: 7rem;
+        align-items: stretch;
+
+        .navigationItem{
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            transition: $transition;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $color-red-dark;
+            }
+        }
+    }
+
+    .sideNavigation{
+        display: flex;
+
+        .accWrapper{
+            display: flex;
+            align-items: center;
+            margin-right: 2rem;
+            cursor: pointer;
+            
+            img{
+                margin-left: 1rem;
+            }
+        }
+
+        .sideNavLogo{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            img{
+                margin-left: 1rem;
+            }
+        }
+    }
+}

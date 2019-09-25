@@ -1,0 +1,9 @@
+<svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+  <title>
+    Mine sider
+  </title>
+  <g stroke-width="2" stroke="#fff" fill="none" fill-rule="evenodd">
+    <path d="M17 9c0-2.21-1.79-4-4-4S9 6.79 9 9s1.79 4 4 4 4-1.79 4-4zM21.282 22c-.972-3.452-4.306-6-8.282-6-3.975 0-7.31 2.548-8.28 6"/>
+    <circle cx="13" cy="13" r="12"/>
+  </g>
+</svg>
